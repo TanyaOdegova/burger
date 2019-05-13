@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/TanyaOdegova/burger#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "mysql": "^2.17.1"
+    "method-override": "^3.0.0",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.0"
   }
 }
