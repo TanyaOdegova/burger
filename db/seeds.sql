@@ -1,7 +1,7 @@
--- Creating seed data for the burgers_db database --
-INSERT INTO burgers (burger_name, devoured) VALUES ('Double Bacon Cheeseburger', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Triple-Stacked Avocado Burger', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Cali-Chicken Cheeseburger', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Southern Style Veggie Burger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Spicy Pepper Jack Mushroom Burger', true);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Tequila Lime Burger', true);
+------data for the table-----
+INSERT INTO burgers (burger_name, devoured) VALUES ("Whooper Burger", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Cheeseburger on Steroids", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Bacon cheeseburger", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Baconator", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Bleu cheese burger", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Frenchie burger", true);

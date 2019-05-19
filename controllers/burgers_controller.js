@@ -1,21 +1,17 @@
-// Pull in required dependencies
 var express = require('express');
 var router = express.Router();
 
-// Import the model (burger.js) to use its database functions.
 var burger = require('../models/burger.js');
-
-// Create the routes and associated logic
+// Routes section //
 router.get('/', function(req, res) {
   burger.selectAll(function(data) {
     var hbsObject = {
       burgers: data
     };
-    // console.log(hbsObject);
     res.render('index', hbsObject);
   });
 });
-
+// endpoint burgers to display entrred into querry answer 
 router.post('/burgers', function(req, res) {
   burger.insertOne([
     'burger_name'
@@ -25,7 +21,7 @@ router.post('/burgers', function(req, res) {
     res.redirect('/');
   });
 });
-
+// endpoint that will pull different ids
 router.put('/burgers/:id', function(req, res) {
   var condition = 'id = ' + req.params.id;
 
@@ -36,5 +32,4 @@ router.put('/burgers/:id', function(req, res) {
   });
 });
 
-// Export routes for server.js to use.
 module.exports = router;
